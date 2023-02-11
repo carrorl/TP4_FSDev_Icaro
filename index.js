@@ -16,17 +16,17 @@ const readlineSyncAge = require("readline-sync")
 
 class person {
     constructor(fName,lName,age) {
-    this.fName;
-    this.lName;
-    this.age
+    this.fName = fNameImput;
+    this.lName = lNameImput;
+    this.age = ageImput
     }
 }
+let fNameImput = readlineSyncFName.question("Ingrese su nombre: ")
+let lNameImput = readlineSyncLName.question("Ingrese su apellido: ")
+let ageImput = readlineSyncAge.question("Ingrese su edad: ")
 
-let newPerson = new person(
-    readlineSyncFName.question("Ingrese su nombre: "),
-    readlineSyncLName.question("Ingrese su apellido: "),
-    readlineSyncAge.question("Ingrese su edad: "))
-
-console.log(person);
+let newPerson = new person(fNameImput,lNameImput,ageImput)
+    
+console.log(newPerson)
 
 
